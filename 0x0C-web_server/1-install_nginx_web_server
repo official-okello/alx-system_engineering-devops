@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Installs nginx web server on a new ubuntu server
 
-sudo apt update
-sudo apt install -y nginx
+apt-get -y update
+apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
 
 echo "Hello World!" | tee /var/www/html/index.nginx-debian.html
